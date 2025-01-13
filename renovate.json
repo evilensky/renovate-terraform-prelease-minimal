@@ -3,11 +3,6 @@
   "separateMinorPatch" : true,
   "separateMultipleMajor": true,
   "separateMultipleMinor": true,
-  "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
-  "matchFileNames": [
-    "environments/**"
-  ],
-  "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
   "packageRules": [
    {
       "matchManagers": [
@@ -18,8 +13,13 @@
       ],
       "branchPrefix": "renovate-terraform-stable-",
       "ignoreUnstable": true,
-      "versioning": "semver"
-    },
+      "versioning": "semver",
+       "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
+  "matchFileNames": [
+    "environments/**"
+  ],
+  "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
+   },
     {
       "matchManagers": [
         "terraform"
@@ -29,7 +29,12 @@
       ],
       "branchPrefix": "renovate-terraform-prerelease-",
       "ignoreUnstable": false,
-      "versioning": "semver"
+      "versioning": "semver",
+        "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
+  "matchFileNames": [
+    "environments/**"
+  ],
+  "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
     }
   ]
 }
