@@ -1,5 +1,5 @@
 module "cloudflare" {
-  source  = "cloudflare/cloudflare/cloudflare"
+  source  = "cloudflare/cloudflare"
   version = "4.0.0"
 
   zone_id = cloudflare_zone.domain.id
