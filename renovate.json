@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "separateMinorPatch" : true,
+  "separateMinorPatch": true,
   "separateMultipleMajor": true,
   "separateMultipleMinor": true,
   "packageRules": [
-   {
+    {
       "matchManagers": [
         "terraform"
       ],
@@ -14,12 +14,12 @@
       "branchPrefix": "renovate-terraform-stable-",
       "ignoreUnstable": true,
       "versioning": "semver",
-       "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
-  "matchFileNames": [
-    "environments/**"
-  ],
-  "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
-   },
+      "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
+      "matchFileNames": [
+        "environments/**"
+      ],
+      "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
+    },
     {
       "matchManagers": [
         "terraform"
@@ -30,11 +30,11 @@
       "branchPrefix": "renovate-terraform-prerelease-",
       "ignoreUnstable": false,
       "versioning": "semver",
-        "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
-  "matchFileNames": [
-    "environments/**"
-  ],
-  "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
+      "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
+      "matchFileNames": [
+        "environments/**"
+      ],
+      "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
     }
   ]
 }
