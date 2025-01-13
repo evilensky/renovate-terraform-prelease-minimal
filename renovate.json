@@ -10,6 +10,16 @@
       ],
       "branchPrefix": "renovate-terraform-prerelease-",
       "ignoreUnstable": false
+    },
+    {
+      "matchManagers": [
+        "terraform"
+      ],
+      "matchDepTypes": [
+        "module"
+      ],
+      "branchPrefix": "renovate-terraform-stable-",
+      "ignoreUnstable": true
     }
   ]
 }
