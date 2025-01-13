@@ -13,8 +13,7 @@
         "terraform",
         "pre-release"
       ],
-      "ignoreUnstable": false,
-      "matchNewValue": "/^v?\\d+\\.\\d+\\.\\d+-[a-zA-Z0-9.-]+$/"
+      "ignoreUnstable": false
     }
   ]
 }
