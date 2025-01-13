@@ -11,9 +11,8 @@
       "matchDepTypes": [
         "module"
       ],
-      "branchPrefix": "renovate-terraform-prerelease-",
-      "ignoreUnstable": false,
-      "matchNewValue": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*)$"
+      "branchPrefix": "renovate-terraform-stable-",
+      "ignoreUnstable": true
     },
     {
       "matchManagers": [
@@ -22,8 +21,8 @@
       "matchDepTypes": [
         "module"
       ],
-      "branchPrefix": "renovate-terraform-stable-",
-      "ignoreUnstable": true
+      "branchPrefix": "renovate-terraform-prerelease-",
+      "ignoreUnstable": false
     }
   ]
 }
