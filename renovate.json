@@ -1,18 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "includePrereleases": true,
   "packageRules": [
     {
       "matchManagers": ["terraform"],
       "matchDepTypes": ["module"],
       "branchPrefix": "renovate-terraform-prerelease-",
-      "ignoreUnstable": false
+      "ignoreUnstable": false,
+      "stabilityDays": 0
     },
     {
       "matchManagers": ["terraform"],
       "matchDepTypes": ["module"],
       "branchPrefix": "renovate-terraform-stable-",
-      "ignoreUnstable": true
+      "ignoreUnstable": true,
+      "stabilityDays": 0
     }
   ]
 }
