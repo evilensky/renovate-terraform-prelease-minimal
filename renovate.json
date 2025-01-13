@@ -9,10 +9,6 @@
         "module"
       ],
       "branchPrefix": "renovate-terraform-prerelease-",
-      "labels": [
-        "terraform",
-        "pre-release"
-      ],
       "ignoreUnstable": false
     }
   ]
