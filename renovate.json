@@ -16,7 +16,7 @@
       "versioning": "semver",
       "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
       "matchFileNames": [
-        "environments/**"
+        "environments/prd/**"
       ],
       "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
     },
@@ -32,7 +32,7 @@
       "versioning": "semver",
       "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
       "matchFileNames": [
-        "environments/**"
+        "environments/dev/**"
       ],
       "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}"
     }
