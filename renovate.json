@@ -14,17 +14,6 @@
       "matchNewValue": "^[vV]?(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*)$",
       "branchPrefix": "renovate-terraform-prerelease-",
       "ignoreUnstable": false
-    },
-    {
-      "matchManagers": [
-        "terraform"
-      ],
-      "matchDepTypes": [
-        "module"
-      ],
-      "matchNewValue": "^[vV]?(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
-      "branchPrefix": "renovate-terraform-stable-",
-      "ignoreUnstable": true
     }
   ]
 }
