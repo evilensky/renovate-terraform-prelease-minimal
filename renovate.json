@@ -1,22 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "includePrereleases": true,
   "packageRules": [
     {
       "matchManagers": ["terraform"],
       "matchDepTypes": ["module"],
       "branchPrefix": "renovate-terraform-prerelease-",
-      "ignoreUnstable": false,
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "rollback", "bump"],
-      "separateMinorPatch": true
+      "ignoreUnstable": false
     },
     {
       "matchManagers": ["terraform"],
       "matchDepTypes": ["module"],
       "branchPrefix": "renovate-terraform-stable-",
-      "ignoreUnstable": true,
-      "matchUpdateTypes": ["major", "minor", "patch", "pin", "digest", "rollback", "bump"],
-      "separateMinorPatch": true
+      "ignoreUnstable": true
     }
-  ],
-  "separateMajorMinor": true
+  ]
 }
