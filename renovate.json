@@ -12,8 +12,7 @@
         "module"
       ],
       "branchPrefix": "renovate-terraform-prerelease-",
-      "ignoreUnstable": false,
-      "matchNewValue": "/^v?\\d+\\.\\d+\\.\\d+-[a-zA-Z0-9.-]+$/"
+      "ignoreUnstable": false
     },
     {
       "matchManagers": [
