@@ -4,13 +4,6 @@
     {
       "matchManagers": ["terraform"],
       "matchDepTypes": ["module"],
-      "branchPrefix": "renovate-terraform-prerelease-",
-      "ignoreUnstable": false,
-      "stabilityDays": 0
-    },
-    {
-      "matchManagers": ["terraform"],
-      "matchDepTypes": ["module"],
       "branchPrefix": "renovate-terraform-stable-",
       "ignoreUnstable": true,
       "stabilityDays": 0
