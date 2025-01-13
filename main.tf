@@ -1,4 +1,4 @@
 module "monkeysnot" {
   source  = "evilensky/monkeysnot/aws"
-  version = "0.0.1"
+  version = "1.0.5"
 }
