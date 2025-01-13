@@ -5,8 +5,7 @@
       "matchManagers": ["terraform"],
       "matchDepTypes": ["module"],
       "branchPrefix": "renovate-terraform-stable-",
-      "ignoreUnstable": true,
-      "stabilityDays": 0
+      "ignoreUnstable": true
     }
   ]
 }
