@@ -8,8 +8,8 @@
       "matchDepTypes": [
         "module"
       ],
-      "branchPrefix": "renovate-terraform-stable-",
-      "ignoreUnstable": true
+      "branchPrefix": "renovate-terraform-prerelease-",
+      "ignoreUnstable": false
     }
   ]
 }
