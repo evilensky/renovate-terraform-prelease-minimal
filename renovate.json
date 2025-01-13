@@ -3,6 +3,11 @@
   "separateMinorPatch" : true,
   "separateMultipleMajor": true,
   "separateMultipleMinor": true,
+  "groupName": "{{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
+  "matchPaths": [
+    "environments/**"
+  ],
+  "commitMessageSuffix": "in {{ replace '^environments\\/(.*?)\\/.*$' '$1' packageFileDir }}",
   "packageRules": [
    {
       "matchManagers": [
